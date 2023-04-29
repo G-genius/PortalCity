@@ -1,0 +1,20 @@
+.header {
+    background: orange;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    margin-top: 20px;
+    margin-right: 300px;
+}
+.menu a {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.logo {
+    margin-left: 50px;
+}
