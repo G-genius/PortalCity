@@ -3,12 +3,13 @@ import logo from "../../Assets/logo.png"
 const Header = () => {
     return (
         <div className="header">
-            <img src={logo} className="logo"/>
+            <a href="/"><img src={logo} className="logo"/></a>
+
             <div className="menu">
-                <a href="">Главная</a>
-                <a href="">ЛК Пользователя</a>
-                <a href="">ЛК Админа</a>
-                <a href="">Войти</a>
+                <a href="/">Главная</a>
+                <a href="lk-user">ЛК Пользователя</a>
+                <a href="lk-admin">ЛК Админа</a>
+                <a href="login">Войти</a>
             </div>
 
         </div>
