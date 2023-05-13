@@ -3,18 +3,17 @@
     height: 70px;
     display: flex;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .menu {
+    margin: 0 auto;
     margin-top: 20px;
-    margin-right: 300px;
 }
 .menu a {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     padding: 10px;
     text-transform: uppercase;
-}
-.logo {
-    margin-left: 50px;
 }

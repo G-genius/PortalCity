@@ -6,7 +6,9 @@ const Header = () => {
             <img src={logo} className="logo"/>
             <div className="menu">
                 <a href="">Главная</a>
-                <a href="">Личный кабинет</a>
+                <a href="">ЛК Пользователя</a>
+                <a href="">ЛК Админа</a>
+                <a href="">Войти</a>
             </div>
 
         </div>
