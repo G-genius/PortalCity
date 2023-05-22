@@ -8,7 +8,7 @@ const Header = () => {
             <div className="menu">
                 <a href="/">Главная</a>
                 <a href="lk-user">ЛК Пользователя</a>
-                <a href="lk-admin">ЛК Админа</a>
+                <a href="admin">ЛК Админа</a>
                 <a href="login">Войти</a>
             </div>
 

@@ -1,12 +1,14 @@
 import MainPage from "./MainPage/MainPage";
 import Header from "../Components/Header/Header";
+import {observer} from "mobx-react-lite";
 
-const Layout = () => {
-  return (
-      <div>
-          <Header/>
-          <MainPage/>
-      </div>
-  )
-}
+const Layout = observer(() => {
+    return (
+        <div>
+            <MainPage/>
+        </div>
+    )
+})
+
+
 export default Layout

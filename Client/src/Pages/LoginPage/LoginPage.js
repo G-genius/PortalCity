@@ -5,7 +5,6 @@ const LoginPage = () => {
 
   return (
       <div>
-          <Header/>
           <div className="container center">
               <form action="">
                   <h1>Вход в аккаунт</h1>

@@ -20,7 +20,6 @@ const RegistrationPage = () => {
 
     return (
         <div>
-            <Header/>
             <div className="container center">
                 <form action="">
                     <h1>Регистрация</h1>
