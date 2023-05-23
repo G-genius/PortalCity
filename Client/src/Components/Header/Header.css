@@ -21,3 +21,6 @@
 .logo {
     height: 70px;
 }
+#logout, #enter{
+    visibility: hidden;
+}

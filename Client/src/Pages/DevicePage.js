@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {Context} from "../index";
 
 const DevicePage = () => {
+    const {device} = useContext(Context)
     return (
         <div>
-            device
+            device page
+            {device.name}
+            {device.price}
         </div>
     );
 };

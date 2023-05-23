@@ -12,7 +12,6 @@ const BrandBar = observer(()=> {
                     className="brandBarBtn"
                     key={brand.id}
                     onClick={() => {device.setSelectedBrand(brand)}}
-                    onChange={brand.id === device.selectedBrand.id ? 'red': "white"}
                 >
                     {brand.name}
                 </button>

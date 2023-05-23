@@ -1,10 +1,15 @@
 import React from 'react';
-import {useHistory} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom";
 const DeviceItem = ({device}) => {
-    const history = useHistory()
+    const navigate = useNavigate()
     return (
-        <div onClick={() => {}}>
-            {device.name}
+        <div >
+            <div onClick={()=> navigate(`/device/${device.id}`)}>
+                {device.id}
+                {device.name}
+            </div>
+
+
         </div>
     );
 };

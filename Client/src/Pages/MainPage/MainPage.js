@@ -3,8 +3,11 @@ import React, {useContext} from "react";
 import {Context} from "../../index";
 import BrandBar from "../../Components/BrandBar/BrandBar";
 import DeviceList from "../../Components/DeviceList/DeviceList";
+import {observer} from "mobx-react-lite";
 
-const MainPage = () => {
+const MainPage = observer(() => {
+
+
     const {device} = useContext(Context)
     return (
         <div className="mainpage">
@@ -21,5 +24,5 @@ const MainPage = () => {
 
         </div>
     )
-}
+})
 export default MainPage

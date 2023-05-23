@@ -1,8 +1,19 @@
 import Header from "../../Components/Header/Header";
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import "./RegistrationPage.css"
+import {Context} from "../../index";
+import {login, registration} from "../../http/userAPI";
 
-const RegistrationPage = () => {
+const RegistrationPage = () => {const {user} = useContext(Context)
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+    const reg = async () => {
+        let data
+        data = await registration(email, password)
+        user.setUser(user)
+        user.setIsAuth(true)
+    }
 
     const [pass1, setPass1] = useState("")
     const [pass2, setPass2] = useState("")
@@ -43,7 +54,7 @@ const RegistrationPage = () => {
                         onChange={e => (setPass2(e.target.value))}
                     /></p>
                     <p>Согласие на обработку персональных данных <input type="checkbox"/></p>
-                    <button type="submit">Зарегистрироваться</button>
+                    <button type="submit" onClick={reg}>Зарегистрироваться</button>
                     <br/>
                     <a href="login" >Есть аккаунт? Войти</a>
                 </form>
