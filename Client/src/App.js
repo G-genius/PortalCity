@@ -32,6 +32,7 @@ function App() {
                 <Route path="registration" element={<RegistartionPage/>}/>
                 <Route path="basket" element={<Basket/>}/>
                 <Route path="device/:id" element={<DevicePage/>}/>
+                <Route path="admin" element={<Admin/>}/>
                 {user._isAuth && <Route path="admin" element={<Admin/>}/>}
                 {/*<Route*/}
                 {/*    path="*"*/}

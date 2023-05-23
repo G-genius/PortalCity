@@ -2,22 +2,9 @@ import {makeAutoObservable} from "mobx";
 
 export default class DeviceStore {
     constructor() {
-        this._types = [
-            {id:1, name: "mobile"},
-            {id:2, name: "tv"},
-            {id:3, name: "pc"},
-            {id:4, name: "holodilniki"}
-        ]
-        this._brands = [
-            {id:1, name:"apple"},
-            {id:2, name:"samsung"},
-        ]
-        this._devices = [
-            {id:1, name:"pro 12", price: "1200000"},
-            {id:2, name:"pro 13", price: "1200000"},
-            {id:3, name:"pro 14", price: "1200000"},
-            {id:14, name:"pro 15", price: "1200000"},
-        ]
+        this._types = []
+        this._brands = []
+        this._devices = []
         this._selectedType = {}
         this._selectedBrand = {}
         this._page = 1
