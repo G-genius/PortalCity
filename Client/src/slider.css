@@ -10,6 +10,7 @@
 }
 #img1 {
     z-index: 3;
+
 }
 #img2 {
     position: relative;
@@ -23,4 +24,16 @@
 }
 #next2, #next3 {
     display: none;
+}
+#img1, #img2, #img3{
+    transition:  transform 0.5s;
+}
+#img1:hover{
+    transform: scale(110%);
+}
+#img2:hover{
+    transform: scale(110%);
+}
+#img3:hover{
+    transform: scale(110%);
 }

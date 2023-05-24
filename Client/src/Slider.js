@@ -7,7 +7,6 @@ const Slider = () => {
         document.getElementById("img3").style.zIndex = 1
         document.getElementById("next1").style.display="none"
         document.getElementById("next2").style.display="block"
-        document.getElementById("img2").style.transform = "translate"
     }
     const next2 = () => {
         document.getElementById("img1").style.zIndex = 1
@@ -15,6 +14,7 @@ const Slider = () => {
         document.getElementById("img3").style.zIndex = 3
         document.getElementById("next2").style.display="none"
         document.getElementById("next3").style.display="block"
+
     }
     const next3 = () => {
         document.getElementById("img1").style.zIndex = 3
@@ -31,11 +31,12 @@ const Slider = () => {
 
             <div className="images">
                 <div className="slides">
-                    <img id="img1" src="https://www.roscosmos.ru/media/img/foto/2018/wallpapers/0014.jpg"/>
-                    <img id="img2" src="http://conceptartworld.com/wp-content/uploads/2013/10/Mathieu_Latour-Duhaime_Concept_Art_Thief_01-680x340.jpg"/>
-                    <img id="img3" src="http://conceptartworld.com/wp-content/uploads/2013/10/Mathieu_Latour-Duhaime_Concept_Art_Thief_07-680x340.jpg"/>
+                    <img id="img1" src="https://www.roscosmos.ru/media/img/foto/2018/wallpapers/0014.jpg" onClick={next}/>
+                    <img id="img2" onClick={next2} src="http://conceptartworld.com/wp-content/uploads/2013/10/Mathieu_Latour-Duhaime_Concept_Art_Thief_01-680x340.jpg"/>
+                    <img id="img3" onClick={next3} src="http://conceptartworld.com/wp-content/uploads/2013/10/Mathieu_Latour-Duhaime_Concept_Art_Thief_07-680x340.jpg"/>
                 </div>
             </div>
+            <button className="test">TEST</button>
         </div>
     );
 };
