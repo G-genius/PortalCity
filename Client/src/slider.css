@@ -1,0 +1,26 @@
+.slider {
+    width: 600px;
+}
+
+.slides {
+    display: flex;
+}
+.slides img {
+    width: 100%;
+}
+#img1 {
+    z-index: 3;
+}
+#img2 {
+    position: relative;
+    right: 600px;
+    z-index: 2;
+}
+#img3 {
+    position: relative;
+    right: 1200px;
+    z-index: 1;
+}
+#next2, #next3 {
+    display: none;
+}

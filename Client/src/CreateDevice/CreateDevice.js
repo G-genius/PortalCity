@@ -4,12 +4,10 @@ import {createBrand, createDevice} from "../http/DeviceAPI";
 
 const CreateDevice = () => {
     const {device} = useContext(Context)
+    const {user} = useContext(Context)
     const [name, setName] = useState('')
     const [price, setPrice] = useState(0)
     const [file, setFile] = useState(null)
-    const [brand, setBrand] = useState(null)
-    const [type, setType] = useState(null)
-    const [info, setInfo] = useState([])
 
     const selectFile = e => {
         setFile(e.target.files[0])
@@ -20,11 +18,13 @@ const CreateDevice = () => {
         formData.append('name', name)
         formData.append('price', `${price}`)
         formData.append('img', file)
-        formData.append('brandId', device.selectedBrand.id)
-        formData.append('typeId', device.selectedType.id)
+        formData.append('brandId', 1)
+        formData.append('typeId', 1)
         createDevice(formData)
+        alert("успешно")
+        console.log(device)
     }
-
+    console.log(device)
     return (
         <div>
             <div>
@@ -33,7 +33,7 @@ const CreateDevice = () => {
             </div>
             <div>
                 <p>Price</p>
-                <input type="text" value={price} placeholder="Цена" onChange={e => setPrice(Number(e.target.value))}/>
+                <input type="text" value={price} placeholder="Цена" onChange={e => setPrice(e.target.value)}/>
             </div>
             <div>
                 <p>Add file</p>

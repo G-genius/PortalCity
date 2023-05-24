@@ -6,6 +6,7 @@ import DeviceList from "../../Components/DeviceList/DeviceList";
 import {observer} from "mobx-react-lite";
 import {fetchBrands, fetchDevices, fetchTypes} from "../../http/DeviceAPI";
 import Pages from "../../Components/Pages";
+import Slider from "../../Slider";
 
 const MainPage = observer(() => {
 
@@ -37,6 +38,7 @@ const MainPage = observer(() => {
                         {type.name}
                     </button>
                 )}
+            <Slider/>
             <BrandBar/>
             <DeviceList/>
             <Pages/>

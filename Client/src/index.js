@@ -5,6 +5,7 @@ import {BrowserRouter} from "react-router-dom";
 import {createContext} from "react";
 import DeviceStore from "./Store/DeviceStore";
 import Header from "./Components/Header/Header";
+import './fonts/Smokum-Regular.ttf';
 
 export const Context = createContext(null)
 

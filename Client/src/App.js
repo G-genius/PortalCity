@@ -17,15 +17,13 @@ function App() {
 
     useEffect(() => {
         check().then(data => {
-            user.setUser(true)
+            user.setUser(data)
             user.setIsAuth(true)
         })
     }, [])
 
 
-
     return (
-        <div>
             <Routes>
                 <Route path="/" element={<Layout/>}/>
                 <Route path="login" element={<LoginPage/>}/>
@@ -39,7 +37,6 @@ function App() {
                 {/*    element={<Navigate to="/" replace />}*/}
                 {/*/>*/}
             </Routes>
-        </div>
     );
 }
 
